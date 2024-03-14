@@ -700,3 +700,21 @@ img.results-in-minutes {
   height: 47px;
   margin: 50px 168px 50px 262px;
 }
+
+.timeButton {
+  background-color: #aa8304; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.timeDemo {
+  text-align: center;
+}
