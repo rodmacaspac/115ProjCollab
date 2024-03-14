@@ -15,7 +15,7 @@
     
 </head>
 
-<body>
+<body onload="checkCookies()">
     <div class="Rectangle-21">
         <header>
             <div class="navi">
@@ -52,7 +52,7 @@
             TREATMENTS <br> 
         </span>
         <!--Muzzammil's Commitment No.1 (MouseEvent1)-->
-        <h5 onclick="this.innerHTML='Please go to Contact us for more details'">Click here for more details</h5>
+        <h5 onclick="this.innerHTML='Please go to Contact us tab for more details'">Click here for more details</h5>
             
             <!-- Added Testimonial page link -->
             <a href="Testimonials.html">
@@ -68,19 +68,32 @@
 
             <script>
                 function displayDate() {
-                document.getElementById("demo").innerHTML = Date();
+                document.getElementById("timeDemo").innerHTML = Date();
             }
             </script>
 
-            <p id="demo"></p>
+            <p id="timeDemo"></p>
     </div>
 
 
     </div>
     
 <!--background-->
+    
+<!--Muzzammil'sCommitmentNo.3(CookiesCheckMethod)-->
+    <p id="cookiesDemo"></p>
 
-
+    <script>
+    function checkCookies() {
+    let text = "";
+    if (navigator.cookieEnabled == true) {
+        text = "Cookies are enabled.";
+    } else {
+        text = "Cookies are not enabled.";
+    }
+    document.getElementById("cookiesDemo").innerHTML = text;
+    }
+    </script>
 
 </body>
 </html>
